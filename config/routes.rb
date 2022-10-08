@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  
+  #Homepage
+  get("/", {:controller => "user_authentication", :action => "index"})
+
+  #User Pages
+  get("/users", {:controller => "user_authentication", :action => "index"})
+  get("/users/:the_username", {:controller => "user_authentication", :action => "show"})
+
+
   # Routes for the Like resource:
 
   # CREATE
