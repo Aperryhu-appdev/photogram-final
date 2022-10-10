@@ -38,7 +38,15 @@
     </td>
 
     <td>
-      <%= user.private%>
+      <% if user.private == false %>
+        <%= "No" %>
+
+      <% else %>
+
+       <%= "Yes" %>
+
+      <%end%>
+
     </td>
 
     <td> </td>
